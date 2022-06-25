@@ -1,0 +1,173 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body,main{
+    height: 100%;
+}
+
+body{
+    font-family: 'Saira Extra Condensed', sans-serif;
+}
+
+/*------ CSS index.html (SOBRE - BARRA LATERAL) ------ */
+
+
+.barraLateral{
+    width: 20%;
+    height: 100%;
+    background-color: #308d54;
+    position: fixed;
+}
+
+.sidebar-align{     /*Alinhar a foto e o menu ao centro na vertical*/
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.img-perfil{    /*Alinhar a foto ao centro na horizoltal*/
+    text-align: center;
+}
+
+.img-perfil img{ /*Ajustar o tamanho e a borda da minha foto*/
+    width: 70%;
+    border-radius: 50%;
+    border: 7px solid #68d291;
+}
+
+.menu{
+    margin: 30px 0; /*margem encima/embaixo de 30px e direita/esquerda de 0*/
+    text-align: center;
+}
+
+.menu a{
+   margin-bottom: 20px; 
+   display: block;
+   text-decoration: none;
+   color: white;
+   font-size: 24px;
+   opacity: 0.4;
+   
+}
+
+.menu a.selecionado{
+    opacity: 1;
+    
+}
+
+a:hover{
+    opacity: 1;
+}
+
+/* ------------------- CSS página Sobre ----------------- */
+
+.iconRedeSocial a:hover{
+    color: black;
+    background-color: #308d54;
+}
+
+.dadosPessoais a:hover{
+    color: black;
+    background-color: lightgray;
+    box-shadow: 5px 5px 10px lightgreen;
+}
+
+
+.content{   /* Configuro o tamanho e a cor da página SOBRE, CONHECIMENTO e OBJETIVOS */
+    position: absolute;
+    /* transform: translateX(25%); */
+    left: 20%;
+    width: 80%;
+    height: 100%;
+    background-color: beige;
+    
+}
+
+article.descricao{ /* Configuro o lugar onde ficará as informações da página SOBRE, alinhando ela no centro*/
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 25px;
+}
+
+h1.meuNome{ 
+    font-size: 135px;
+    line-height: 100%; /*Configura a distancia do meu nome para os meus dados*/
+    
+}
+h3.dadosPessoais{ 
+    font-size: 20px;
+}
+
+.dadosPessoais a{
+    text-decoration: none;
+    color: #308d54;
+}
+
+p.minha-descricao{
+    font-size: 19px;
+    margin: 30px 0;
+    max-width: 86ch;
+}
+
+span{
+    color: #308d54;    
+}
+
+.iconRedeSocial a{
+    display: inline-block;
+    color: white;
+    border-radius: 50%;
+    background-color: gray;
+    width: 40px;
+    height: 40px;
+    font-size: 23px;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 15px;
+}
+
+.iconRedeSocial i{
+    margin: 0 9px;
+    line-height: 40px; /*Configurando a altura da linha, alinhando o icone no centro do circulo */
+}
+
+/* ------------------- CSS página Conhecimentos ----------------- */
+
+article.descricao-conhecimento{ /* Configuro o lugar onde ficará as informações da página CONHECIMENTO, alinhando ela no centro*/
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 50px;
+}
+
+ol{
+    font-size: 25px;
+}
+.descricao-conhecimento > ol > li{
+    padding: 5px 0;
+}
+
+
+/* ------------------- CSS página Objetivos ----------------- */
+
+
+article.descricao-objetivos{ /* Configuro o lugar onde ficará as informações da página OBJETIVOS, alinhando ela no centro*/
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 50px;
+}
+
+ul{
+    font-size: 25px;
+}
+
+.descricao-objetivos > ul > li{
+    padding: 10px 0;
+}
